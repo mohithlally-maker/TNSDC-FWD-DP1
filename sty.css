@@ -1,0 +1,171 @@
+        /* === Background and Font === */
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url('Screenshot_29-8-2025_10342_dm0qx8t0i9gc9.cloudfront.net.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            z-index: 1;
+        }
+        /* === Dark Overlay === */
+        
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: -1;
+        }
+        /* === Header === */
+        
+        header {
+            background-color: #1e1e1e;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        /* === Navigation with glow === */
+        
+        nav a {
+            display: inline-block;
+            color: white;
+            border: 2px solid cyan;
+            padding: 8px 16px;
+            border-radius: 5px;
+            margin: 10px 8px;
+            font-weight: bold;
+            text-decoration: none;
+            background-color: transparent;
+            transition: all 0.3s ease;
+            animation: blinkGlow 1.5s infinite alternate;
+        }
+        
+        nav a:hover {
+            background-color: cyan;
+            color: black;
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(0, 255, 255, 0.6);
+        }
+        
+        @keyframes blinkGlow {
+            0% {
+                box-shadow: 0 0 5px cyan, 0 0 10px cyan;
+            }
+            100% {
+                box-shadow: 0 0 15px cyan, 0 0 25px cyan;
+            }
+        }
+        /* === Section Headings === */
+        
+        h1,
+        h2 {
+            color: cyan;
+            margin-bottom: 20px;
+        }
+        /* === Section Layout === */
+        
+        section {
+            padding: 40px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        /* === Flex Layouts === */
+        
+        .skills,
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        /* === Card Style === */
+        
+        .card {
+            background-color: #000;
+            color: #fff;
+            border: 2px solid white;
+            padding: 20px;
+            border-radius: 8px;
+            flex: 1 1 300px;
+            text-align: center;
+            font-size: 1.1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: none;
+        }
+        
+        .card.active {
+            background-color: #001f4d;
+            box-shadow: 0 0 20px 5px rgba(0, 0, 139, 0.7);
+            color: white;
+        }
+        
+        .card:hover {
+            transform: scale(1.03);
+            box-shadow: 0 0 10px rgba(0, 0, 139, 0.6);
+        }
+        /* === Description Text === */
+        
+        .description,
+        .project-description {
+            display: none;
+            margin-top: 10px;
+            font-size: 0.95rem;
+            color: #ccc;
+        }
+        
+        .card.active .description,
+        .card.active .project-description {
+            display: block;
+        }
+        /* === About Section === */
+        
+        .about-container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+        }
+        
+        .about-text {
+            flex: 1 1 60%;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #ddd;
+        }
+        
+        .about-photo {
+            flex: 1 1 35%;
+            text-align: center;
+        }
+        
+        .about-photo img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+            border: 3px solid cyan;
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
+        }
+        
+        #contact a {
+            color: white;
+            font-weight: bold;
+            text-decoration: underline;
+            transition: color 0.3s ease;
+        }
+        
+        #contact a:hover {
+            color: cyan;
+            text-decoration: none;
+        }

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mohith | Portfolio</title>
+    <link rel="stylesheet" href="sty.css">
+</head>
+
+<body>
+    <header>
+        <h1>Mohith</h1>
+        <p>2nd Year BSc Computer Science with Data Science Student</p>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-container">
+            <div class="about-text">
+                <p>Hello! I’m Mohith, a passionate 2nd-year student pursuing BSc Computer Science with Data Science.</p>
+                <p>I have a strong interest in technology, problem-solving, and creating practical software solutions. I enjoy working on personal projects that challenge me to learn new skills. I’m also actively learning about Artificial Intelligence and
+                    Data Analytics.</p>
+                <p>In my free time, I explore new tech tools, contribute to open-source, and love robotics-based experiments.</p>
+            </div>
+            <div class="about-photo">
+                <img src="c3f1bfa8-427f-44aa-931a-7f20e35d9e6c.jfif" alt="Mohith's Photo" />
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills">
+            <div class="card" onclick="toggleDescription(this)">
+                Python
+                <p class="description">A high-level programming language used for automation, data science, and web development.</p>
+            </div>
+            <div class="card" onclick="toggleDescription(this)">
+                C Programming
+                <p class="description">A foundational language used for system programming and embedded development.</p>
+            </div>
+            <div class="card" onclick="toggleDescription(this)">
+                Data Analysis
+                <p class="description">Using tools and techniques to extract insights from data sets.</p>
+            </div>
+            <div class="card" onclick="toggleDescription(this)">
+                HTML, CSS
+                <p class="description">Core web technologies used to design and style web pages.</p>
+            </div>
+            <div class="card" onclick="toggleDescription(this)">
+                MySQL Basics
+                <p class="description">Fundamentals of database management and SQL queries using MySQL.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="courses">
+        <h2>Courses</h2>
+        <div class="skills">
+            <div class="card" onclick="toggleDescription(this)">
+                Artificial Intelligence with Machine Learning
+                <p class="description">
+                    This course covers the fundamentals of AI and machine learning, including supervised and unsupervised learning, neural networks, and real-world applications in automation and data-driven systems.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="card" onclick="toggleProject(this)">
+                <h3>Line Following Robot</h3>
+                <p class="project-description">A robotics project where the robot follows a black line path using IR sensors. Built with Arduino and basic electronics.</p>
+            </div>
+            <div class="card" onclick="toggleProject(this)">
+                <h3>Hotel Billing System (Python)</h3>
+                <p class="project-description">A console-based Python program that calculates customer bills based on selected food items, taxes, and quantities.</p>
+            </div>
+            <div class="card" onclick="toggleProject(this)">
+                <h3>Student Details Management (Python)</h3>
+                <p class="project-description">A CLI project to add, view, and manage student details such as name, roll number, marks, and grades using file handling in Python.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:mohithrudhran@gmail.com">mohithrudhran@gmail.com</a></p>
+        <p>Instagram: <a href="https://www.instagram.com/_esthetic.rider" target="_blank">@_esthetic.rider</a></p>
+    </section>
+
+    <footer>
+        <p>© 2025 Mohith | All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
